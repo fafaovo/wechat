@@ -1,0 +1,35 @@
+/* pages/company/company.wxss */
+.w{
+  margin: 35rpx 40rpx;
+}
+
+page{
+  background-color: #eeeeee;
+}
+
+.cin{
+  clear: both;
+  background-color: #fff;
+  padding: 35rpx 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-bottom: 40rpx;
+}
+.phone{
+  width: 60%;
+  float: left;
+}
+
+#btn{
+  font-size:25rpx;
+  width: 25%;
+  margin: 0;
+  padding: 35rpx 20rpx;
+  float:right;
+}
+
+navigator{
+  display: inline;
+}
+
+

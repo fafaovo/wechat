@@ -1,0 +1,46 @@
+/* pages/index/index.wxss */
+.w{
+  padding: 0 40rpx;
+}
+
+
+.usename,.password{
+  font-size: 40rpx;
+  display: flex;
+  margin:20rpx 0;
+  border-bottom:1px solid gray;
+  padding:20rpx 0;
+}
+
+.usename text,.password text{
+  padding-right: 10rpx;
+  font-weight: 800;
+  width: 150rpx;
+}
+
+.password image{
+  width: 80rpx;
+  height: 60rpx;
+}
+
+
+.lianjie{
+  font-size: 35rpx;
+  display: flex;
+  margin-top: 50rpx;
+  justify-content: space-between
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 20rpx;
+}
+
+.footer image{
+  width: 160rpx;
+  height: 220rpx;
+}
+

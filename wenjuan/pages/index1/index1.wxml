@@ -1,0 +1,63 @@
+<!--pages/index1/index1.wxml-->
+<form action="">
+  <view class="f">
+    <view class="mb">
+      <image src="/pages/images/attention.png"></image>
+      <text class="bigFrom">今日体温（℃）</text>
+    </view>
+    <view>
+      <radio-group>
+        <radio color="#4169E1" checked="true"><text class="tl">正常小于37.3℃</text></radio>
+        <radio color="#4169E1">37.3℃以上</radio>
+      </radio-group>
+    </view>
+  </view>
+
+
+  <view class="f">
+    <view class="mb">
+      <image src="/pages/images/attention.png"></image>
+      <text class="bigFrom">近两周内是否去过武汉或湖北其他城市</text>
+    </view>
+    <view>
+      <radio-group>
+        <radio color="#4169E1" checked="true"><text class="tl">否</text></radio>
+        <radio color="#4169E1">是</radio>
+      </radio-group>
+    </view>
+  </view>
+
+
+  <view class="f">
+    <view class="mb">
+      <image src="/pages/images/attention.png"></image>
+      <text class="bigFrom">您及您的家人是否有一下症状[多选题]</text>
+    </view>
+    <view>
+      <checkbox-group>
+        <checkbox color="#4169E1">发烧</checkbox>
+        <checkbox color="#4169E1">流鼻涕</checkbox>
+        <checkbox color="#4169E1">咳嗽</checkbox>
+        <checkbox color="#4169E1">疑似新兴冠状病毒</checkbox>
+        <checkbox checked="true" color="#4169E1">无以上症状</checkbox>
+      </checkbox-group>
+    </view>
+  </view>
+
+  <view class="f">
+    <view class="mb">
+      <image src="/pages/images/attention.png"></image>
+      <text class="bigFrom">近两周内是否去过武汉或湖北其他城市</text>
+    </view>
+    <view>
+      <view class="switch"><text>是否有症状</text><switch color="#4169E1"></switch></view>
+      <view class="switch"><text>目前是否在观察期</text><switch  color="#4169E1"></switch></view>
+    </view>
+  </view>
+
+  <view class="f">
+    <view class="mb">备注</view>
+    <textarea name="" id=""></textarea>
+    <button style="width:100%">提交</button>
+  </view>
+</form>

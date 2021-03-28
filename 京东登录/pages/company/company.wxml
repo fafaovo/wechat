@@ -1,0 +1,20 @@
+<!--pages/company/company.wxml-->
+<view class="w">
+  <input type="text" placeholder="请设置4-20位用户名" class="cin"/>
+  <input type="text" placeholder="请设置6-20位登录密码" class="cin"/>
+  <input type="text" placeholder="请输入工商局注册名称" class="cin"/>
+  <input type="text" placeholder="请输入联系人姓名" class="cin"/>
+  <view class="flex">
+    <input type="text" placeholder="请输人手机号" class="cin phone"/>
+    <button id="btn">发送验证码</button>
+  </view>
+  <input type="text" placeholder="短信验证码" class="cin"/>
+
+  <view class="body">
+  <view><switch type="checkbox">已阅读并同意</switch><navigator style="color:skyblue;">《京东用户注册协议》</navigator></view>
+  </view>
+
+</view>
+<view class=" w footer">
+  <button style="width:100%;background-color:green;">注册</button>
+</view>

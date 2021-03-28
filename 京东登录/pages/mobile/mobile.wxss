@@ -1,0 +1,17 @@
+/* pages/mobile/mobile.wxss */
+.w{
+  margin: 80rpx 40rpx;
+}
+
+
+page{
+  background-color: #eeeeee;
+}
+
+.head{
+  display: flex;
+  padding:25rpx 0;
+  background-color: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+}

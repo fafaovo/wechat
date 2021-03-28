@@ -1,0 +1,4 @@
+/* pages/personal/personal.wxss */
+page{
+  background-color: pink;
+}

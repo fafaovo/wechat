@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index2/index2",
+    "pages/task/task",
+    "pages/friends/friends",
+    "pages/personal/personal"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天气预报",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "首页",
+        "iconPath": "img/b_2.png",
+        "selectedIconPath": "img/b_1.png"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "任务",
+        "iconPath": "img/c_2.png",
+        "selectedIconPath": "img/c_1.png" 
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "好友",
+        "iconPath": "img/d_2.png",
+        "selectedIconPath": "img/d_1.png" 
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "img/a_2.png",
+        "selectedIconPath": "img/a_1.png"
+      }
+    ],
+    "borderStyle": "black"
+  }
+}

@@ -1,0 +1,12 @@
+<!--pages/index2/index2.wxml-->
+<view class="head">
+  <view class="weather_big">4℃</view>
+  <view class="weather_small">-1℃/10℃</view>
+  <view>晴</view>
+  <view style="font-size:1pc">广州</view>
+  <view>星期一</view>
+  <view>无持续风向 微风级</view>
+  <button class="btn">点击刷新</button>
+  <view>{{message}}</view>
+  <view>{{time}}</view>
+</view>

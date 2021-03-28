@@ -1,0 +1,4 @@
+/* pages/task/task.wxss */
+page{
+  background-color: chocolate;
+}

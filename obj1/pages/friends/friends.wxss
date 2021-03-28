@@ -1,0 +1,4 @@
+/* pages/friends/friends.wxss */
+page{
+  background-color: red;
+}

@@ -1,0 +1,26 @@
+/* pages/index2/index2.wxss */
+view{
+  text-align: center;
+  color: white;
+  margin: 50rpx 0;
+  font-size: 40rpx;
+}
+
+page{
+  background-color: lightskyblue;
+}
+
+.head{
+  padding:20rpx 0;
+}
+
+.weather_big{
+  font-size: 150rpx;
+}
+
+
+.btn{
+  margin:40rpx 0;
+  color: lightskyblue;
+  height: 40px;
+}
