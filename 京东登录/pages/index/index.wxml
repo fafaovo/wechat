@@ -3,16 +3,16 @@
   <form>
     <view class="usename">
       <text class="">账号</text>
-      <input type="text" placeholder="用户名/邮箱/手机号" />
+      <input type="text" placeholder="用户名/邮箱/手机号" bindinput="hq"/>
     </view>
 
     <view class="password">
       <text class="">密码</text>
-      <input type="password" placeholder="请输入密码" />
+      <input type="password" placeholder="请输入密码" bindinput="pw"/>
       <image src="/images/see.jpg"></image>
     </view>
 
-    <button style="width:100%;margin-top: 50rpx;" type="primary">登录</button>
+    <button style="width:100%;margin-top: 50rpx;" type="primary" bindtap="dl">登录</button>
   </form>
   <view class="lianjie">
     <navigator url="/pages/mobile/mobile">手机快速注册</navigator>

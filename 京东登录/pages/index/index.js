@@ -5,7 +5,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    n:'',
+    p:'',
+  },
+  dl:function()
+  {
+    if(this.data.n == 'root' && this.data.p == 'root'){
+      wx.showToast({
+        title: '登录成功',
+        duration: 4000,
+        image:'/images/true.png',
+      })
+    }
+    else{
+      wx.showToast({
+        title: '登录失败',
+        duration:4000,
+        image:'/images/false.png',
+      })
+    }
+  },
+  hq:function(e){
+    var name = e.detail.value;
+    //获取到值
+    this.setData({n:name});
+    //将数据放入data， this当前页面->设置Data
+    //放入data中的变量才能在其他地方通过this.Data.变量名获取
+  },
+  pw:function(e){
+    var pw = e.detail.value;
+    this.setData({p:pw});
   },
 
   /**
