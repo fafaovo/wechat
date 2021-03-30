@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * 在WXML中  
  * 一.bindinput   
   * 等同于 id,class 来获取当前变量在js中使用，  
