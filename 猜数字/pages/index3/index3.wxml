@@ -1,0 +1,15 @@
+<!--pages/index3/index3.wxml-->
+<!--
+  <text>请输入数字1:</text><input type="text" bindinput="num1"/>
+<text>请输入数字2:</text><input type="text" bindinput="num2"/>
+<text>{{num1}}{{fuhao}}{{num2}}</text>
+<button bindtap="btn">比较</button>
+-->
+
+<!--使用提交方式-->
+<form action="" bindsubmit="bj">
+  <text>请输入数字1:</text><input type="text" name='n1' />
+  <text>请输入数字2:</text><input type="text" name='n2' />
+  <button form-type="submit">点击比较</button>
+  {{n1}}{{result}}{{n2}}
+</form>
