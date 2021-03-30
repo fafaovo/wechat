@@ -1,27 +1,18 @@
 <<<<<<< HEAD
-* 在WXML中  
- * 一.bindinput   
-  * 等同于 id,class 来获取当前变量在js中使用，  
-  * 执行次函数是需要在行参处传入一个变量function(e)  
-  * 只能在input中使用  
- * 二.bindtap   
-  * 等同于 onlick   并且不需要(),运行函数  
-  * 在wxml中使用name标签时
-* 在JS中  
- * 一.wx.showToast  
-  * 弹出一个带图片和文字的窗口   
-  * 可选参数 duration时间  
- * 二.var name = e.detail.value;    
-  * 获取到值 此处e为行参传入的e 等同于document.querySelector  
- * 三.this.setData({ Data中变量名称 : 当前函数要放入的变量 });  
-  * 将数据放入data， this当前页面->设置Data  
-  * 放入data中的变量才能在其他地方通过this.Data.变量名获取
- * 四.使用form提交表单内的数据,即  
-  * 1.form内 bindsubmit="函数名"  
-  * 2.button按钮提交内 form-type="submit"  
-  * 3.给input添加name
-  * 4.接着使用 函数名:function(e){}, 此处e可以获取到页内的元素  即e.detail.value.'你给input提供的name'
-  
-
+* 一.在input中使用 bindinput = “值” 来获取值value  
+	*  1.等同于 id,class 来获取当前变量在js中使用  
+	*  2.在微信小程序的JS中使用 值:function(e){},此处的e可以用于获取整个input的参数  
+	*  3.使用 e.detail.value 即可得到input的value值  
+	*  4.this.setData({ Data中变量名称 : 当前函数要放入的变量 }); 可以将改变量放入自带的data中,并且可以使用this.data.名字在其他函数体内来调用这个变量
+* 二.在按钮中使用 bindtap = "值" 来触发点击效果
+	*  1.等同于 onlick 并且不需要() 
+	*  2.在JS中使用   值:function(){}, 
+* 三.使用 wx.showToast 可以在屏幕中间弹出窗口
+	*  1.  可选参数有 duration时间 等等
+* 四.使用form提交表单内的数据,即
+	*  1.form内 bindsubmit="函数名"  
+	*  2.给input添加name  
+	*  3.button按钮提交内 form-type="submit"  
+	*  4.在JS中使用 函数名:function(e){}, 此处e可以获取到页内的元素  即e.detail.value.'你给input提供的name'
 
   
