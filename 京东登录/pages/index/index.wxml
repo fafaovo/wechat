@@ -8,8 +8,10 @@
 
     <view class="password">
       <text class="">密码</text>
-      <input type="password" placeholder="请输入密码" bindinput="pw"/>
-      <image src="/images/see.jpg"></image>
+      <input wx:if="{{xs==true}}" type="password" placeholder="请输入密码" bindinput="pw" value="{{p}}"/>
+      <input wx:else type="text" placeholder="请输入密码" bindinput="pw" value="{{p}}"/>
+      <image wx:if="{{xs==true}}" src="/images/see.jpg" bindtap="show"></image>
+      <image wx:else src="/images/see.png" bindtap="show"></image>
     </view>
 
     <button style="width:100%;margin-top: 50rpx;" type="primary" bindtap="dl">登录</button>

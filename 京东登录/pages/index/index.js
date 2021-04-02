@@ -7,6 +7,15 @@ Page({
   data: {
     n:'',
     p:'',
+    xs:true,
+  },
+  show:function(){
+    if(this.data.xs){
+      this.setData({xs:false});
+    }else{
+      this.setData({xs:true});
+      
+    }
   },
   dl:function()
   {

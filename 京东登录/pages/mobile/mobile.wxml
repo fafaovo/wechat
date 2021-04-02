@@ -5,9 +5,10 @@
 </view>
 
 <view class="w body">
-  <view><switch type="checkbox">同意用户注册协议</switch></view>
+  <view><switch type="checkbox" bindchange="gx">同意用户注册协议</switch></view>
 </view>
 
 <view class="w footer">
-  <button style="width:100%;">下一步</button>
+  <button style="width:100%;" type="primary" disabled="{{!gx}}">下一步</button>
+  
 </view>

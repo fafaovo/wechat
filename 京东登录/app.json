@@ -1,8 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/company/company",
-    "pages/mobile/mobile"
+    "pages/mobile/mobile",
+    
+    "pages/company/company"
+   
     
    
     
