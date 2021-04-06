@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index4/index4",
+    "pages/index5/index5"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF4500",
+    "navigationBarTitleText": "今日头条",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index4/index4",
+      "text": "首页",
+      "iconPath": "/pages/images/bar/index-0.jpg",
+      "selectedIconPath": "/pages/images/bar/index-1.jpg"
+      },
+      {
+        "pagePath": "pages/index5/index5",
+        "text": "我的",
+        "iconPath": "/pages/images/bar/me-0.jpg",
+        "selectedIconPath": "/pages/images/bar/me-1.jpg"
+      }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,87 @@
+/* pages/index4/index4.wxss */
+.fixed{
+  position: fixed;
+  z-index: 99;
+}
+.head{
+  width: 100%;
+  display: flex;
+  background: #FF4500;
+  padding: 10px 10px;
+}
+
+.head>view{
+  color: white;
+  line-height: 30px;
+  font-size:large;
+}
+
+.head input{
+  padding:5px;
+  margin-left: 40rpx;
+  border-radius: 5px;
+  width: 60%;
+  text-indent: 18px;
+  background: white url(data:image/jpg;base64,/9j/4AAQSkZJRgABAAEAYABgAAD//gAfTEVBRCBUZWNobm9sb2dpZXMgSW5jLiBWMS4wMQD/2wCEAAgFBgcGBQgHBgcJCAgJDBQNDAsLDBgREg4UHRkeHhwZHBsgJC4nICIrIhscKDYoKy8xMzQzHyY4PDgyPC4yMzEBCAkJDAoMFw0NFzEhHCExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/EAaIAAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKCwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+foRAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/AABEIAA8AEAMBEQACEQEDEQH/2gAMAwEAAhEDEQA/APZYIhfPNJO0gCSMiorlQoBxnj1qSiSwdlmuLZmLiFhtY8nBGcH6UIQstkxlaS3uJLcv94KAQT64I60AU7eC702/2q5ura5fLFiA6Njr7ijYZ//Z) no-repeat 5px center;
+}
+
+.nav{
+  padding:2px 10px;
+  background-color: rgba(231, 227, 227);
+  height: 30px;
+ 
+}
+
+.nav .scroll .dw{
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+}
+
+.nav .scroll{
+  overflow: hidden;
+}
+
+.nav .scroll .dw view{
+  font-size:18px;
+  display: block;
+  padding:0 10rpx;
+  margin:0 10rpx;
+  line-height: 30px;
+}
+
+.nav .scroll .dw .active{
+  color: red;
+  height: 30px;
+  border-bottom:2px solid red;
+}
+
+.body{
+  padding:10px;
+  overflow: hidden;
+}
+
+.body .node .wz{
+  padding:5px 10px;
+  font-size: 38rpx;
+}
+
+.body .node{
+  border-top:2px solid #dfdfdf;
+  border-bottom:2px solid #dfdfdf;
+  margin-bottom:20rpx;
+}
+
+.body .node .tp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.body .node .tp image{
+  width: 32%;
+  height: 160rpx;
+}
+
+swiper{
+  height:1600rpx;
+}

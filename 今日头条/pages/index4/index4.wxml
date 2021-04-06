@@ -1,0 +1,86 @@
+<!--pages/index4/index4.wxml-->
+
+<!--head-->
+<view class="head">
+  <view>今日头条</view>
+  <input type="text" placeholder="搜你想要的" confirm-type="serch"/>
+</view>
+
+<!--nav-->
+<view class="nav">
+  <scroll-view class="scroll" scroll-x="true" >
+    <view class="dw">
+      <!--
+        data-xxx 自定义xxx的值，在js中可以通过e.target.dataset.xxx获取
+        tab==0?'active':'' 此为三目运算符
+      -->
+      <view class="{{tab==0?'active':''}}" data-num="0" bindtap="tab">热点</view>
+      <view class="{{tab==1?'active':''}}" data-num="1" bindtap="tab">推荐</view>
+      <view class="{{tab==2?'active':''}}" data-num="2" bindtap="tab">视频</view>
+      <view class="{{tab==3?'active':''}}" data-num="3" bindtap="tab">社会</view>
+      <view>娱乐</view>
+      <view>科技</view>
+      <view>汽车</view>
+      <view>财经</view>
+      <view>军事</view>
+      <view>时尚</view>
+      <view>游戏</view>
+    </view>
+  </scroll-view>
+</view>
+
+<!--swiper-->
+<view class="sw">
+  <swiper current="{{tab}}">
+    <swiper-item>
+      <view class="body">
+      <view class="node">
+        <view class="wz">啥时候开学！啥时候可以摘口罩！啥时候可以出去玩！</view>
+        <view class="tp">
+          <image src="/pages/images/img1.jpg"></image>
+          <image src="/pages/images/img2.jpg"></image>
+          <image src="/pages/images/img3.jpg"></image>
+        </view>
+      </view>
+      <view class="node">
+        <view class="wz">哪来的回哪去！官方回应女子拒隔离大闹机场辱骂防疫人员</view>
+        <view class="tp">
+          <image src="/pages/images/img7.jpg"></image>
+          <image src="/pages/images/img8.jpg"></image>
+          <image src="/pages/images/img9.jpg"></image>
+        </view>
+      </view>
+      <view class="node">
+        <view class="wz">“中国制造有病毒”耿爽：别穿！别戴！别用！</view>
+        <view class="tp">
+          <image src="/pages/images/img4.jpg"></image>
+          <image src="/pages/images/img5.jpg"></image>
+          <image src="/pages/images/img6.jpg"></image>
+        </view>
+      </view>
+      <view class="node">
+        <view class="wz">“中国制造有病毒”耿爽：别穿！别戴！别用！</view>
+        <view class="tp">
+          <image src="/pages/images/img4.jpg"></image>
+          <image src="/pages/images/img5.jpg"></image>
+          <image src="/pages/images/img6.jpg"></image>
+        </view>
+      </view>
+       <view class="node">
+        <view class="wz">“中国制造有病毒”耿爽：别穿！别戴！别用！</view>
+        <view class="tp">
+          <image src="/pages/images/img4.jpg"></image>
+          <image src="/pages/images/img5.jpg"></image>
+          <image src="/pages/images/img6.jpg"></image>
+        </view>
+      </view>
+      </view>
+    </swiper-item>
+    <swiper-item>内容2</swiper-item>
+    <swiper-item>内容3</swiper-item>
+    <swiper-item>内容4</swiper-item>
+  </swiper>
+</view>
+
+
+
