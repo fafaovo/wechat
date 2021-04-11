@@ -31,50 +31,23 @@
 
 <!--swiper-->
 <view class="sw">
-  <swiper current="{{tab}}">
+  <swiper current="{{tab}}" bindchange="change">
     <swiper-item>
       <view class="body">
-      <view class="node">
-        <view class="wz">啥时候开学！啥时候可以摘口罩！啥时候可以出去玩！</view>
-        <view class="tp">
-          <image src="/pages/images/img1.jpg"></image>
-          <image src="/pages/images/img2.jpg"></image>
-          <image src="/pages/images/img3.jpg"></image>
+        <view class="node" wx:for="{{array1}}" wx:for-index="index" wx:for-item="item">
+          <view class="wz">{{item.message}}</view>
+          <view class="tp">
+            <image src="{{item.img1}}"></image>
+            <image src="{{item.img2}}"></image>
+            <image src="{{item.img3}}"></image>
+          </view>
         </view>
       </view>
-      <view class="node">
-        <view class="wz">哪来的回哪去！官方回应女子拒隔离大闹机场辱骂防疫人员</view>
-        <view class="tp">
-          <image src="/pages/images/img7.jpg"></image>
-          <image src="/pages/images/img8.jpg"></image>
-          <image src="/pages/images/img9.jpg"></image>
-        </view>
+    <!--
+      <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+        {{idx}}:{{itemName.message}}
       </view>
-      <view class="node">
-        <view class="wz">“中国制造有病毒”耿爽：别穿！别戴！别用！</view>
-        <view class="tp">
-          <image src="/pages/images/img4.jpg"></image>
-          <image src="/pages/images/img5.jpg"></image>
-          <image src="/pages/images/img6.jpg"></image>
-        </view>
-      </view>
-      <view class="node">
-        <view class="wz">“中国制造有病毒”耿爽：别穿！别戴！别用！</view>
-        <view class="tp">
-          <image src="/pages/images/img4.jpg"></image>
-          <image src="/pages/images/img5.jpg"></image>
-          <image src="/pages/images/img6.jpg"></image>
-        </view>
-      </view>
-       <view class="node">
-        <view class="wz">“中国制造有病毒”耿爽：别穿！别戴！别用！</view>
-        <view class="tp">
-          <image src="/pages/images/img4.jpg"></image>
-          <image src="/pages/images/img5.jpg"></image>
-          <image src="/pages/images/img6.jpg"></image>
-        </view>
-      </view>
-      </view>
+    -->
     </swiper-item>
     <swiper-item>内容2</swiper-item>
     <swiper-item>内容3</swiper-item>

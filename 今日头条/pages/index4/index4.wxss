@@ -62,7 +62,7 @@
 }
 
 .body .node .wz{
-  padding:5px 10px;
+  padding:5px 0;
   font-size: 38rpx;
 }
 
@@ -83,5 +83,5 @@
 }
 
 swiper{
-  height:1600rpx;
+  height:1200rpx;
 }
