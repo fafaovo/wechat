@@ -19,5 +19,7 @@
 	*  1.使用方式 <input wx:if={{bool类型}} type="text" /> 
 * 六.按钮type状态为primary为绿色可点击
 	*  1.通过disabled=”布尔值“可以修改为灰色不可选中
+* 七. 在wxml中使用data-xxx="值" 通过bindtap可以在js中 通过e.target.dataset.xxx获取里面的值
+* 八. var num2 = this.data.num2.substr(0,this.data.num2.length-1);可以删除this.data中num2字符串中的最后一个元素
 
   

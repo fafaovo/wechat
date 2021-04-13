@@ -1,0 +1,37 @@
+<!--pages/index4/index4.wxml-->
+<view class="head">
+    <view class="a1">{{num1}}{{fuhao}}{{num2}}</view>
+    <view class="a2">={{result}}</view>
+</view>
+<view class="footer">
+  <!-- shift+ alt +f -->
+  <view>
+    <view style="color: red;" hover-class="active" bindtap="remove">C</view>
+    <view hover-class="active" bindtap="del">DEL</view>
+    <view hover-class="active" data-symbol="5" bindtap="symbol" hover-class="active">%</view>
+    <view style="color:orange" data-symbol="4" bindtap="symbol" hover-class="active">÷</view>
+  </view>
+  <view>
+    <view data-num="7" bindtap="getnum" hover-class="active">7</view>
+    <view data-num="8" bindtap="getnum" hover-class="active">8</view>
+    <view data-num="9" bindtap="getnum" hover-class="active">9</view>
+    <view style="color:orange" data-symbol="3" bindtap="symbol" hover-class="active">x</view>
+  </view>
+  <view>
+    <view data-num="4" bindtap="getnum" hover-class="active">4</view>
+    <view data-num="5" bindtap="getnum" hover-class="active">5</view>
+    <view data-num="6" bindtap="getnum" hover-class="active">6</view>
+    <view style="color:orange" data-symbol="2" bindtap="symbol" hover-class="active">-</view>
+  </view>
+  <view>
+    <view data-num="1" bindtap="getnum" hover-class="active">1</view>
+    <view data-num="2" bindtap="getnum" hover-class="active">2</view>
+    <view data-num="3" bindtap="getnum" hover-class="active">3</view>
+    <view style="color:orange" data-symbol="1" bindtap="symbol" hover-class="active">+</view>
+  </view>
+  <view>
+    <view hover-class="active" data-num="0" bindtap="getnum" >0</view>
+    <view hover-class="active" data-num="." bindtap="getnum">.</view>
+    <view style="color:orange" hover-class="active" bindtap="calculation">=</view>
+  </view>
+</view>
