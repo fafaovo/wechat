@@ -1,0 +1,53 @@
+/* pages/question/question.wxss */
+page{
+  background-color: #fde6b4;
+}
+
+.Interface{
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 40rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1{
+  flex: 1;
+  font-size: 40rpx;
+  font-weight: bold;
+  padding-bottom: 20rpx;
+}
+
+radio-group{
+  flex: 3;
+}
+
+radio{
+  padding: 20rpx;
+  display: block;
+}
+
+.option{
+  padding-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.prev,.next{
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color:rgb(226, 222, 222);
+  border-radius: 20rpx;
+  padding:0 30rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.next{
+  background-color: #fde6b4;
+}

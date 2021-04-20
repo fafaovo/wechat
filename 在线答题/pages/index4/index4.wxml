@@ -1,0 +1,11 @@
+<!--pages/index4/index4.wxml-->
+<view class="center">
+  <view class="url">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="name">
+    <open-data type="userNickName"></open-data>
+  </view>
+  <view class="h5">你好!欢迎来到xxx答题</view>
+  <view class="btn" bindtap="main">开始</view>
+</view>

@@ -10,23 +10,64 @@ Page({
     fuhao:'',
     result:'',
   },
+  my_seach:function(str,needs){
+    var i = 0;
+    var a = 0;
+    while(i != str.length)
+    {
+      if(str[i] == needs)
+      {
+        if(a==1)
+        {
+          return i;
+        }
+        a++;
+        i++;
+      }
+      else
+      {
+        i++;
+      }
+    }
+    return -1;
+  },
   getnum:function(e){
     var num =  e.target.dataset.num;
+    console.log(this.data.num1);
     //获取数字
-    if(Number(this.data.num1) == 0)
+    if(this.data.num1 === '0' && num != ".")
     {
       this.setData({num1:num});
     }
-    else if(Number(this.data.num1) != 0 && this.data.fuhao == '')
+    else if(this.data.num1 == 0 && num == '.')
     {
-      this.setData({num1:this.data.num1+num});
+      console.log("===");
+      this.setData({num1:String(0+num)});
+    }
+    else if(this.data.num1 != '0' && this.data.fuhao == '')
+    {
+      var num1 = (this.data.num1)+num;
+      var a = this.my_seach(String(num1),".");
+      if(a == -1)
+        this.setData({num1:num1});
+      else
+        return;
     }
     else if(this.data.fuhao != '' && this.data.num2 == '')
     {
       this.setData({num2:num});
     }
     else{
-      this.setData({num2:this.data.num2+num});
+      var num2 = (this.data.num2)+num;
+      if(Number(num2) == 0 && num != '.')
+      {
+        return;
+      }
+      var a = this.my_seach(String(num2),".");
+      if(a == -1)
+        this.setData({num2:num2});
+      else
+        return;
     }
     this.result();
   },
@@ -63,7 +104,6 @@ Page({
   result:function(){
     var num1 = Number(this.data.num1);
     var num2 = Number(this.data.num2);
-    console.log("result",num1,num2);
     if(num1 != '' && num2 == '')
     {
       this.setData({result:num1});
@@ -72,27 +112,27 @@ Page({
     {
       if(this.data.fuhao == '+')
       {
-        var result = Number(num1) +Number(num2);
+        var result = parseFloat(num1) + parseFloat(num2);
         this.setData({result:result});
       }
       else if(this.data.fuhao == '-')
       {
-        var result = Number(num1) - Number(num2);
+        var result = parseFloat(num1) - parseFloat(num2);
         this.setData({result:result});
       }
       else if(this.data.fuhao == 'x')
       {
-        var result = Number(num1) * Number(num2);
+        var result = parseFloat(num1) * parseFloat(num2);
         this.setData({result:result});
       }
       else if(this.data.fuhao == '÷')
       {
-        var result = Number(num1) / Number(num2);
+        var result = parseFloat(num1) / parseFloat(num2);
         this.setData({result:result});
       }
       else if(this.data.fuhao == '%')
       {
-        var result = Number(num1) % Number(num2);
+        var result = parseFloat(num1) % parseFloat(num2);
         this.setData({result:result});
       }
     }

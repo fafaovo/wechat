@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/question/question",
+    "pages/index4/index4"
+    
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4169E1",
+    "navigationBarTitleText": "答题",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
