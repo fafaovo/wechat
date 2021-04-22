@@ -1,11 +1,22 @@
 // pages/question/question.js
+// 调用接口
+const dy = require("../question/data.js")
 Page({
 
   /**
    * 页面的初始数据
    */
+  
   data: {
-
+    dy:dy.dictionaryArray,
+    id:0,
+  },
+  change:function(e){
+    var a = e.detail.current;
+    this.setData({tab:a});
+  },
+  prev:function(e){
+    console.log(this.data.tab);
   },
 
   /**

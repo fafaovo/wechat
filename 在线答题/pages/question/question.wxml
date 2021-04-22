@@ -1,11 +1,19 @@
 <!--pages/question/question.wxml-->
 <view class="Interface">
-  <view class="h1">1.锦鲤是指什么</view>
-  <radio-group>
-    <radio>A.池子里的观赏鱼</radio>
-    <radio>B.带来好运</radio>
-    <radio>C.鱼跃龙门</radio>
-    <radio>D.五颜六色的鱼</radio>
-  </radio-group>
-  <view class="option"><view class="prev">上一题</view><view class="next">下一题</view></view>
+  <swiper>
+    <swiper-item wx:for="{{dy}}">
+      <view class="h1">{{item.question}}</view>
+      <radio-group>
+        <radio>A.{{item.option[0]}}</radio>
+        <radio>B.{{item.option[1]}}</radio>
+        <radio>C.{{item.option[2]}}</radio>
+        <radio>D.{{item.option[3]}}</radio>
+      </radio-group>
+      <view class="option">
+        <button class="prev" bindtap="prev">上一题</button>
+        <button class="next" bindtap="next">下一题</button>
+      </view>
+      <view class="num"><text>{{index}}</text><text>/5</text></view>
+    </swiper-item>
+  </swiper>
 </view>

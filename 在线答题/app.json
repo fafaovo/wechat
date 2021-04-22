@@ -8,10 +8,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#4169E1",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "答题",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
