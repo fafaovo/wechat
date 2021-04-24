@@ -1,19 +1,24 @@
 <!--pages/question/question.wxml-->
+
 <view class="Interface">
-  <swiper>
-    <swiper-item wx:for="{{dy}}">
+  <swiper current="{{id}}" bindchange="cur">
+    <swiper-item wx:for="{{dy}}" wx:key="null">
       <view class="h1">{{item.question}}</view>
-      <radio-group>
-        <radio>A.{{item.option[0]}}</radio>
-        <radio>B.{{item.option[1]}}</radio>
-        <radio>C.{{item.option[2]}}</radio>
-        <radio>D.{{item.option[3]}}</radio>
+      <form bindsubmit="loginHandle">
+      <radio-group name="dx">
+        <radio value="A">A.{{item.option[0]}}</radio>
+        <radio value="B">B.{{item.option[1]}}</radio>
+        <radio value="C">C.{{item.option[2]}}</radio>
+        <radio value="D">D.{{item.option[3]}}</radio>
       </radio-group>
       <view class="option">
-        <button class="prev" bindtap="prev">上一题</button>
-        <button class="next" bindtap="next">下一题</button>
+        <button class="prev" bindtap="prev" disabled="{{id==0}}">上一题</button>
+        <button class="next" bindtap="next"  form-type="submit" wx:if="{{id<4}}">下一题</button>
+        <button class="tijiao" form-type="submit" wx:else>提交</button>
       </view>
-      <view class="num"><text>{{index}}</text><text>/5</text></view>
+      <view class="num"><text>{{index+1}}</text><text>/{{dy.length}}</text></view>
+    </form>
     </swiper-item>
   </swiper>
 </view>
+{{fs}}

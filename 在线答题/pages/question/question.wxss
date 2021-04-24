@@ -44,7 +44,7 @@ radio{
   display: flex;
   justify-content: space-around;
 }
-.prev,.next{
+.prev,.next,.tijiao{
   font-size: 32rpx;
   height: 60rpx;
   line-height: 60rpx;
@@ -55,7 +55,7 @@ radio{
   font-weight: bold;
 }
 
-.next{
+.next,.prev,.tijiao{
   background-color: #fde6b4;
 }
 

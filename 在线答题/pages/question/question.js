@@ -9,14 +9,21 @@ Page({
   
   data: {
     dy:dy.dictionaryArray,
+    fs:0,
+    array:0,
     id:0,
   },
-  change:function(e){
-    var a = e.detail.current;
-    this.setData({tab:a});
+  prev:function(){
+    this.setData({id:this.data.id-1});
   },
-  prev:function(e){
-    console.log(this.data.tab);
+  next:function(){
+    this.setData({id:this.data.id+1});
+  },
+  loginHandle:function(e){
+    var a = e.detail.value.dx;
+  },
+  cur:function(e){
+    this.setData({id:e.detail.current});
   },
 
   /**
