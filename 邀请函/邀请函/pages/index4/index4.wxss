@@ -1,0 +1,70 @@
+/* pages/index4/index4.wxss */
+page{
+  /* https://sm.ms/ 将图片变成网络图片 */
+  background: url("https://i.loli.net/2021/04/27/81MImXqWQFzuUhJ.png");
+  background-size: auto 100%;
+}
+.fu{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color:  #FF1493;
+}
+.fu>image,.fu>view{
+  margin-top: 20rpx;
+}
+
+.fu>image:nth-of-type(1){
+  position: absolute;
+  right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.fu>image:nth-of-type(2){
+  width: 300rpx;
+  height: 200rpx;
+}
+.fu>view:nth-of-type(1){
+  font-size: 50rpx;
+}
+.fu>image:nth-of-type(3){
+  width: 350rpx;
+  height: 350rpx;
+  border: #FF1493 4px solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.fu>view:nth-of-type(2){
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  font-size: 45rpx;
+  align-items: center;
+}
+.fu>view:nth-of-type(2)>view{
+  position: relative;
+}
+.fu>view:nth-of-type(2)>view>image{
+  position: absolute;
+  top: -40rpx;
+  right: -40rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border: #FF1493 1px solid;
+  border-radius: 50%;
+  overflow: hidden; 
+}
+.fu>view:nth-of-type(2)>image{
+  height: 150rpx;
+  width: 150rpx;
+}
+.fu>view:nth-of-type(3){
+  margin: 50rpx;
+  font-size: 45rpx;
+  font-weight: 500;
+}
+.fu>view:nth-of-type(4),.fu>view:nth-of-type(5){
+  margin-bottom: 30rpx;
+  font-size: 35rpx;
+}

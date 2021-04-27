@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index4/index4",
+    "pages/index1/index1",
+    "pages/index2/index2",
+    "pages/index3/index3"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF1493",
+    "navigationBarTitleText": "婚礼邀请函",
+    "navigationBarTextStyle":"white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FF1493",
+    "list": [
+      {
+      "pagePath":"pages/index4/index4",
+      "text": "邀请函",
+      "iconPath": "/pages/images/bar/invite.png",
+      "selectedIconPath": "/pages/images/bar/invite.png"
+      },
+      {
+        "pagePath":"pages/index3/index3",
+        "text": "照片",
+        "iconPath": "/pages/images/bar/marry.png",
+        "selectedIconPath": "/pages/images/bar/marry.png"
+      },
+      {
+        "pagePath":"pages/index2/index2",
+        "text": "视频",
+        "iconPath": "/pages/images/bar/video.png",
+        "selectedIconPath": "/pages/images/bar/video.png"
+      },
+      {
+        "pagePath":"pages/index1/index1",
+        "text": "随机地点",
+        "iconPath": "/pages/images/bar/map.png",
+        "selectedIconPath": "/pages/images/bar/map.png"
+      }
+  ]
+  }
+}

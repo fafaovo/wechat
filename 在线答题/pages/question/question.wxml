@@ -1,6 +1,6 @@
 <!--pages/question/question.wxml-->
 
-<view class="Interface">
+<view class="Interface" wx:if="{{wx}}">
   <swiper current="{{id}}" bindchange="cur">
     <swiper-item wx:for="{{dy}}" wx:key="null">
       <view class="h1">{{item.question}}</view>
@@ -14,11 +14,23 @@
       <view class="option">
         <button class="prev" bindtap="prev" disabled="{{id==0}}">上一题</button>
         <button class="next" bindtap="next"  form-type="submit" wx:if="{{id<4}}">下一题</button>
-        <button class="tijiao" form-type="submit" wx:else>提交</button>
+        <button class="tijiao" bindtap="tijiao" form-type="submit" wx:else >提交</button>
       </view>
       <view class="num"><text>{{index+1}}</text><text>/{{dy.length}}</text></view>
-    </form>
+      </form>
     </swiper-item>
   </swiper>
 </view>
-{{fs}}
+<view class="df" wx:else>
+  <view>你的最终得分是{{fs}}分</view>
+  <view>你的最终段位是:</view>
+  <view wx:if="{{fs<60}}">
+    <view class="wz">青铜</view>
+    <view class="tupian"><image src="/pages/images/sad.gif"></image></view>
+  </view>
+  <view wx:else>
+    <view class="wz" >王者</view>
+    <view class="tupian" ><image src="/pages/images/sahua.gif"></image></view>
+  </view>
+
+</view>

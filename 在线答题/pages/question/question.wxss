@@ -64,3 +64,29 @@ radio{
   width: 100%;
   text-align: center;
 }
+
+
+.df{
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 40rpx 20rpx;
+}
+.df view{
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+.df .tupian image{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.df .wz{
+  font-size: 80rpx;
+  color: rgb(240, 82, 114);
+}

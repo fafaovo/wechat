@@ -10,20 +10,49 @@ Page({
   data: {
     dy:dy.dictionaryArray,
     fs:0,
-    array:0,
     id:0,
+    open:0,
+    answer:new Array(5),
+    wx:true
+  },
+  loginHandle:function(e){
+    var a = e.detail.value.dx;
+    var i = this.data.id;
+    if(this.data.open == 1 ){
+      this.data.answer[this.data.id] = a;
+      this.fract();
+      return;
+    }
+    this.data.answer[this.data.id] = a;
+    console.log(this.data.answer);
   },
   prev:function(){
+      if(this.data.id == 4 && this.data.open == 1){
+        this.setData({open:0});
+      }
     this.setData({id:this.data.id-1});
+    
   },
   next:function(){
     this.setData({id:this.data.id+1});
   },
-  loginHandle:function(e){
-    var a = e.detail.value.dx;
-  },
   cur:function(e){
     this.setData({id:e.detail.current});
+  },
+  tijiao:function(e){
+    this.setData({open:1});
+  },
+  fract:function(){
+    this.setData({fs:0});
+    for(var i = 0; i < 5; i++){
+      var result = this.data.dy[i].ranswer;
+      var current = this.data.answer[i];
+      if(result == current){
+        this.setData({fs:this.data.fs+20});
+      }
+    }
+    console.log("统计分数",this.data.fs);
+    this.setData({wx:false});
   },
 
   /**
