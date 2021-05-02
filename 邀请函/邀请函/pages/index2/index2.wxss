@@ -1,1 +1,8 @@
 /* pages/index2/index2.wxss */
+swiper{
+  height: 100vh;
+}
+image{
+  width: 100vw;
+  height: 100vh;
+}

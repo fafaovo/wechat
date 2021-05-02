@@ -1,2 +1,4 @@
 <!--pages/index1/index1.wxml-->
-<text>pages/index1/index1.wxml</text>
+<map name="" latitude="{{lat}}" longitude="{{long}}" scale="18" markers="{{mark}}" bindmarkertap="markertap">
+  <button bindtap="geimypos">查看我的位置</button>
+</map>

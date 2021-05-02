@@ -24,13 +24,13 @@
       "selectedIconPath": "/pages/images/bar/invite.png"
       },
       {
-        "pagePath":"pages/index3/index3",
+        "pagePath":"pages/index2/index2",
         "text": "照片",
         "iconPath": "/pages/images/bar/marry.png",
         "selectedIconPath": "/pages/images/bar/marry.png"
       },
       {
-        "pagePath":"pages/index2/index2",
+        "pagePath":"pages/index3/index3",
         "text": "视频",
         "iconPath": "/pages/images/bar/video.png",
         "selectedIconPath": "/pages/images/bar/video.png"

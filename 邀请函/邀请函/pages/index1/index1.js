@@ -5,7 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    long:113.27216,
+    lat:23.12699,
+    mark:[{
+      id:0,
+      title:'xx大酒店',
+      latitude:23.12699,
+      longitude:113.27216,
+      iconPath:'/pages/images/map/hotel.png',
+      width:50,
+      height:50
+    }]
+  },
+  markertap:function(){
+    wx.openLocation({
+      latitude: this.data.lat,
+      longitude: this.data.long,
+    })
+  },
+  getmypos:function(){
+    wx.getLocation({
+      altitude: 'altitude',
+      type:'gcj02',
+      success:function(res){
+        wx.openLocation({
+          latitude: res.latitude,
+          longitude: res.longitude
+        })
+      }
+    })
   },
 
   /**

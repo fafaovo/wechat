@@ -1,5 +1,5 @@
 <!--pages/index2/index2.wxml-->
-<swiper>
+<swiper vertical="vertical" autoplay="true" indicator-dots="true">
   <swiper-item><image src="/pages/images/pic/timg1.jpg"></image></swiper-item>
   <swiper-item><image src="/pages/images/pic/timg2.jpg"></image></swiper-item>
   <swiper-item><image src="/pages/images/pic/timg3.jpg"></image></swiper-item>
