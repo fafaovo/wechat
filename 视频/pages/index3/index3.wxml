@@ -1,0 +1,5 @@
+<video id="vd" src="{{sp}}" danmu-btn enable-danmu danmu-list="{{list}}" autoplay></video>
+<button bindtap="open">打开路径</button>
+
+<input type="text" placeholder="在此处输入弹幕内容" bindblur="danmu" value="{{wb}}"/>
+<button style="margin: 30rpx auto"  bindtap="fs" class="page-body-button" type="primary" formType="submit">发送弹幕</button>

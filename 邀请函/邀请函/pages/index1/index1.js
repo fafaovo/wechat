@@ -9,20 +9,29 @@ Page({
     lat:23.12699,
     mark:[{
       id:0,
-      title:'xx大酒店',
       latitude:23.12699,
       longitude:113.27216,
       iconPath:'/pages/images/map/hotel.png',
       width:50,
-      height:50
+      height:50,
+      callout:{
+        content:'广州大酒店',
+        display:'ALWAYS',
+        borderColor:'#000',
+        borderWidth:1,
+        padding:5
+      }
     }]
   },
   markertap:function(){
     wx.openLocation({
       latitude: this.data.lat,
       longitude: this.data.long,
+      name:'广州大酒店',
+      address:'酒店xxxxxxxxxxxxxxx'
     })
   },
+  
   getmypos:function(){
     wx.getLocation({
       altitude: 'altitude',
