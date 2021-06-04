@@ -1,0 +1,5 @@
+<view class="play">
+  <view>{{newlist[0].bt}}</view>
+  <view>--{{newlist[0].singer}}--</view>
+  <view><image src="{{newlist[0].src}}" mode="aspectFill" class="{{state==true?'stop':'run'}}"></image></view>
+</view>

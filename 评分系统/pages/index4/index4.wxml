@@ -1,0 +1,14 @@
+<!--pages/index4/index4.wxml-->
+<view class="fu">
+  <view>1.五星好评</view>
+  <view class="tx">
+    <image src="{{id<index?'/image/1.png':'/image/2.png'}}" bindtap="btn_xx" data-val="{{item}}" wx:for="{{num}}"></image>
+    <text>{{text[id]}}</text>
+  </view>
+</view>
+<view class="fu">
+  <view>2.五星好评</view>
+  <view class="tx con">
+    <view wx:for="{{con}}" class="{{item.bool?'active':''}}" bindtap="act" data-val="{{item.id}}">{{item.txt}}</view>
+  </view>
+</view>

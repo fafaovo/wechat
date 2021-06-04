@@ -1,0 +1,121 @@
+/* pages/index1/index1.wxss */
+page{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.center{
+  flex: 1;
+}
+.tab{
+  display: flex;
+  text-align: center;
+}
+.tab view{
+  flex: 1;
+  padding:30rpx 0;
+  border-bottom: 2px solid white;
+}
+.tab .active{
+  color: pink;
+  border-bottom: 2px solid pink;
+}
+
+.music{
+  display: flex;
+  align-items: center;
+  height: 140rpx;
+  background-color: rgb(44, 44, 46);
+  padding: 0 10rpx;
+}
+
+.sw{
+  height: 100%;
+}
+.topsw{
+  height: 40%;
+}
+
+.topsw image{
+  width: 100vw;
+  height: 100%;
+}
+
+.nav,.m-item{
+  padding: 40rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav>view,.m-item>view{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-size:35rpx;
+}
+
+.nav image{
+  padding: 20rpx 0;
+  width: 120rpx;
+  height: 120rpx;
+}
+.m-item image{
+  padding: 20rpx 0;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.music image{
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 20rpx;
+}
+.music>view:nth-of-type(1){
+  flex: 1;
+  padding-left: 20rpx;
+}
+.bflb>view{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding-bottom:20rpx ;
+  border-bottom: 1px solid #000;
+}
+.bflb>view>view{
+  padding-left: 20rpx;
+}
+.bflb>view>view:nth-of-type(1){
+  flex: 1;
+}
+.bflb image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.play{
+  text-align: center;
+  margin: 30px;
+}
+.play>view{
+  padding: 20rpx 0;
+}
+.play image{
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+}
+.run{
+  animation: dh 5s infinite linear running;
+}
+.stop{
+  animation: dh 5s infinite linear paused;
+}
+/*动画*/
+@keyframes dh{
+  from{transform:rotate(0deg)}
+  to{transform: rotate(360deg)}
+}

@@ -1,0 +1,10 @@
+<view class="bflb">
+  <view wx:for="{{newlist}}" wx:for-index="index" wx:for-item="item">
+    <image src="{{item.src}}" data-num="{{index}}" bindtap="click"></image>
+    <view>
+      <view>{{item.bt}}</view>
+      <view>{{item.singer}}</view>
+    </view>
+    <view wx:if="{{index == 0}}">正在播放</view>
+  </view>
+</view>

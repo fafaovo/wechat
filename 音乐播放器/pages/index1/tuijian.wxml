@@ -1,0 +1,34 @@
+<scroll-view scroll-y="true" style="height:100%">
+        <!--轮播图-->
+        <swiper indicator-dots="true" indicator-color="#fffff" indicator-active-color="white" autoplay="true" circular="true" class="topsw">
+          <swiper-item><image src="../../images/lb1.png"></image></swiper-item>
+          <swiper-item><image src="../../images/lb2.jpg"></image></swiper-item>
+          <swiper-item><image src="../../images/lb3.jpg"></image></swiper-item>
+        </swiper>
+        <!--end-->
+        <!--私人FM 每日歌曲推荐 云音乐新歌榜-->
+        <view class="nav">
+          <view>
+            <image src="/images/04.png"></image>
+            <view>私人FM</view>
+          </view>
+          <view>
+            <image src="/images/05.png"></image>
+            <view>每日歌曲推荐</view>
+          </view>
+          <view>
+            <image src="/images/06.png"></image>
+            <view>云音乐新歌榜</view>
+          </view>
+        </view>
+        <!--end-->
+        <!--推荐歌曲-->
+        <view style="padding-left:40rpx">推荐歌曲</view>
+        <view class="m-item">
+          <view wx:for="{{tj}}" wx:for-index="index" wx:for-item="item">
+            <image src="{{item.src}}" data-num="{{index}}" bindtap="click"></image>
+            <view>{{item.bt}}</view>
+          </view>
+        </view>
+        <!--end-->
+      </scroll-view>

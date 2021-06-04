@@ -1,0 +1,31 @@
+<!--pages/index1/index1.wxml-->
+<view class="tab">
+  <view class="{{tab==0?'active':''}}" data-num="0" bindtap="ovo">音乐推荐</view>
+  <view class="{{tab==1?'active':''}}" data-num="1" bindtap="ovo">播放器</view>
+  <view class="{{tab==2?'active':''}}" data-num="2" bindtap="ovo">播放列表</view>
+</view>
+<view class="center">
+  <swiper current="{{tab}}" bindchange="change" class="sw">
+    <swiper-item>
+      <include src="tuijian.wxml"></include>
+    </swiper-item>
+    <swiper-item>
+      <include src="play.wxml"></include>
+    </swiper-item>
+    <swiper-item>
+      <include src="bofangliebiao.wxml"></include>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="music">
+  <image src="{{tj[index].src}}"></image>
+  <view>
+    <view>{{tj[index].bt}}</view>
+    <view>{{tj[index].singer}}</view>
+  </view>
+  <view>
+    <image src="/images/play.png" bindtap="play" wx:if="{{state == true}}"></image>
+    <image src="/images/stop.png" bindtap="stop" wx:else></image>
+    <image src="/images/next.png" bindtap="next"></image>
+  </view>
+</view>
