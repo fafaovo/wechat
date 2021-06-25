@@ -1,0 +1,24 @@
+/* pages/index3/index3.wxss */
+.head{height: 90vh;background-color: yellow;overflow: hidden;}
+.head .left{
+  background-color: #fff;
+  width: 30vw;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+.head .left text{
+  flex: 1;
+  border-bottom: 1px solid rgb(155, 154, 154);
+  text-align: center;
+  padding: 22rpx;
+}
+.head .right{
+  background-color: green;
+  width: 70vw;
+  height: 100%;
+  float: right;
+}
+
+.footer{height: 10vh;background-color: blue;}

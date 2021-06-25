@@ -1,0 +1,112 @@
+<!--pages/index4/index4.wxml-->
+<view class="top">
+  <input type="text" id="seach" placeholder="搜索莫凡商品"/>
+</view>
+
+<view class="nav">
+  <view class="{{tab==0?'active':''}}" data-num="0" bindtap="tab">热门技术</view>
+  <view class="{{tab==1?'active':''}}" data-num="1" bindtap="tab">秒杀时刻</view>
+  <view class="{{tab==2?'active':''}}" data-num="2" bindtap="tab">畅销热榜</view>
+</view>
+
+<view class="sw">
+  <swiper current="{{tab}}" bindchange="change">
+    <swiper-item>
+      <view class="img-item">
+        <image src="/image/t1.jpg"></image>
+        <view>
+          <view class="a1">微信小程序开发图解案例教程</view>
+          <view class="a2">作者:刘刚 著</view>
+          <view class="a2">出版社:人民邮电出版社</view>
+          <view class="a2">出版时间:2021-6-25</view>
+          <view>
+            <text class="a3">￥62.8</text>
+            <text style="text-decoration:line-through;font-size:30rpx">￥69.8</text>
+          </view>
+        </view>
+      </view>
+      <view class="img-item">
+        <image src="/image/t2.jpg"></image>
+        <view>
+          <view class="a1">微信小程序开发全案精讲</view>
+          <view class="a2">作者:刘刚 著</view>
+          <view class="a2">出版社:人民邮电出版社</view>
+          <view class="a2">出版时间:2021-6-25</view>
+          <view>
+            <text class="a3">￥41.88</text>
+            <text style="text-decoration:line-through;font-size:30rpx">￥50.1</text>
+          </view>
+        </view>
+      </view>
+      <view class="img-item">
+        <image src="/image/t3.jpg"></image>
+        <view>
+          <view class="a1">第一行代码 JAVA</view>
+          <view class="a2">作者:李兴华 马云涛 著</view>
+          <view class="a2">出版社:人民邮电出版社</view>
+          <view class="a2">出版时间:2021-6-25</view>
+          <view>
+            <text class="a3">￥57.7</text>
+            <text style="text-decoration:line-through;font-size:30rpx">￥89</text>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="img-item">
+        <image src="/image/t4.jpg"></image>
+        <view>
+          <view class="a1">Android原理解析与开发指南</view>
+          <view class="a2">作者:杨清平 著</view>
+          <view class="a2">出版社:人民邮电出版社</view>
+          <view class="a2">出版时间:2021-6-25</view>
+          <view>
+            <text class="a3">￥35.99</text>
+            <text style="text-decoration:line-through;font-size:30rpx">￥47.2</text>
+          </view>
+        </view>
+      </view>
+      <view class="img-item">
+        <image src="/image/t5.jpg"></image>
+        <view>
+          <view class="a1">响应式Web开发项目教程</view>
+          <view class="a2">作者:黑马程序员 著</view>
+          <view class="a2">出版社:人民邮电出版社</view>
+          <view class="a2">出版时间:2021-6-25</view>
+          <view>
+            <text class="a3">￥36.4</text>
+            <text style="text-decoration:line-through;font-size:30rpx">￥42</text>
+          </view>
+        </view>
+      </view>
+      <view class="img-item">
+        <image src="/image/t6.jpg"></image>
+        <view>
+          <view class="a1">第一行代码 c语言</view>
+          <view class="a2">作者:温惠与 著</view>
+          <view class="a2">出版社:人民邮电出版社</view>
+          <view class="a2">出版时间:2021-6-25</view>
+          <view>
+            <text class="a3">￥41.99</text>
+            <text style="text-decoration:line-through;font-size:30rpx">￥69.8</text>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="img-item">
+        <image src="/image/t7.jpg"></image>
+        <view>
+          <view class="a1">前端HTML+CSS修炼之道</view>
+          <view class="a2">作者:聂长虹 刘伟 著</view>
+          <view class="a2">出版社:人民邮电出版社</view>
+          <view class="a2">出版时间:2021-6-25</view>
+          <view>
+            <text class="a3">￥75.7</text>
+            <text style="text-decoration:line-through;font-size:30rpx">￥89</text>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

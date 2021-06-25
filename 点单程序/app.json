@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index4/index4",
+    "pages/index3/index3"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#80c19f",
+    "navigationBarTitleText": "两点点",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index4/index4",
+      "text": "两点点",
+      "iconPath": "/images/bar11.png",
+      "selectedIconPath": "/images/bar2.png"
+    },
+    {
+      "pagePath": "pages/index3/index3",
+      "text": "下单",
+      "iconPath": "/images/bar11.png",
+      "selectedIconPath": "/images/bar2.png"
+    },
+    {
+      "pagePath": "pages/index3/index3",
+      "text": "下单",
+      "iconPath": "/images/bar11.png",
+      "selectedIconPath": "/images/bar2.png"
+    },
+    {
+      "pagePath": "pages/index3/index3",
+      "text": "下单",
+      "iconPath": "/images/bar11.png",
+      "selectedIconPath": "/images/bar2.png"
+    },
+    {
+      "pagePath": "pages/index3/index3",
+      "text": "下单",
+      "iconPath": "/images/bar11.png",
+      "selectedIconPath": "/images/bar2.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -4,8 +4,8 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#4169E1",
-    "navigationBarTitleText": "111",
+    "navigationBarBackgroundColor": "#009865",
+    "navigationBarTitleText": "莫凡商城",
     "navigationBarTextStyle":"white"
   },
   "sitemapLocation": "sitemap.json"

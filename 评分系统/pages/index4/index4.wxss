@@ -23,3 +23,26 @@
   border: 1px solid rgb(247, 112, 112);
   color: rgb(247, 112, 112);
 }
+textarea{
+  border: 1px solid #000;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  
+}
+.tu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tu image,.tu button{
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.tu button{
+  border: 0;
+  border: 1px solid rgb(112, 112, 112);
+  color: rgb(112, 112, 112);
+  padding: 50rpx;
+}

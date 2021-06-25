@@ -1,0 +1,9 @@
+<!--pages/index3/index3.wxml-->
+<view class="head">
+  <view class="left">
+    <text wx:for="{{tap}}" data-val="{{index}}" bindtap="qh">{{item}}</text>
+  </view>
+  <view class="right"></view>
+
+</view>
+<view class="footer"></view>

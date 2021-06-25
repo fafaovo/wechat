@@ -1,0 +1,17 @@
+<!--pages/index4/index4.wxml-->
+<swiper autoplay="true" indicator-dots indicator-color="white">
+  <swiper-item><image src="/images/lb1.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/lb2.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/lb3.jpg"></image></swiper-item>
+</swiper>
+<view class="btn" bindtap="order" wx:if="{{false}}">开始点餐→</view>
+<button type="warn">{{teacher[0].id}}</button>
+<view class="fu">
+  <image src="/images/dd.png"></image>
+  <view>
+    <image src="/images/s1.jpg"></image>
+    <image src="/images/s2.jpg"></image>
+    <image src="/images/s3.jpg"></image>
+    <image src="/images/s4.jpg"></image>
+  </view>
+</view>

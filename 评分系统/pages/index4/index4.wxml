@@ -7,8 +7,22 @@
   </view>
 </view>
 <view class="fu">
-  <view>2.五星好评</view>
+  <view>2.建议</view>
   <view class="tx con">
     <view wx:for="{{con}}" class="{{item.bool?'active':''}}" bindtap="act" data-val="{{item.id}}">{{item.txt}}</view>
   </view>
+</view>
+<view class="fu" style="overflow:hidden">
+  <view>3.评价</view>
+  <textarea maxlength="{{max}}" minlength="{{min}}" placeholder="更多评论填写在这里(5-20字)" bindinput="val"></textarea>
+  <text style="float: left;">{{m_text}}</text>
+  <text style="float: right;">{{m_num}}/{{max}}</text>
+</view>
+<view class="fu">
+  <view>4.上传图片</view>
+  <view class="tu">
+    <image wx:for="{{imgs}}" src="{{item}}" mode="aspectFill" bindlongpress="del" bindtap="yulan"></image>
+    <button bindtap="UPload">+</button>
+  </view>
+  
 </view>
